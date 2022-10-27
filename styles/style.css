@@ -281,7 +281,7 @@ hr {
 .day,
 .mounth,
 .country {
-    font-size: 14px;
+    font-size: 16px;
     padding: 10px;
     border: solid 1px #627EDC;
     border-radius: 4px;
@@ -294,7 +294,7 @@ hr {
 }
 
 .reg input {
-    font-size: 14px;
+    font-size: 16px;
     padding: 10px;
     margin-top: 5px;
     border-radius: 4px;
@@ -310,7 +310,6 @@ legend {
     font-size: 18px;
     margin-bottom: 10px;
     color: rgb(3, 102, 102);
-
 }
 
 .reg span {
@@ -408,15 +407,14 @@ legend {
     height: 400px;
     position: absolute;
     border-radius: 10px;
-
+    box-shadow: 20px 20px 20px rgb(20, 1, 1);
 }
 
 .travel-photo:hover {
     z-index: 4;
-    box-shadow: 0 0 10px #ccc;
 }
 
-.slide {
+.collage {
     margin-top: 100px;
     position: relative;
     width: 1200px;
@@ -426,7 +424,7 @@ legend {
 
 .ph1 {
     z-index: 1;
-    top:50px;
+    top: 50px;
     left: 0;
 }
 
@@ -497,10 +495,29 @@ legend {
 
 .contact-form label {
     display: block;
+    font-size: 18px;
+    padding-bottom: 10px;
 }
 
-.contact-form p {
-    margin: 0;
+.contact-bottom label {
+    text-align: center;
+}
+
+.contact-inner-box {
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+.contact-inner-box select {
+    font-size: 16px;
+    padding: 16px;
+    border: solid 1px #627EDC;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.contact-inner-box option {
+    font-size: 16px;
 }
 
 .contact-bottom {
@@ -513,7 +530,7 @@ legend {
 .contact-form textarea {
     width: 100%;
     padding: 16px;
-    font-size: 14px;
+    font-size: 16px;
     border: solid 1px #627EDC;
     border-radius: 4px;
 }

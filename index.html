@@ -24,7 +24,7 @@
     </header>
     <main>
         <section class="intro">
-            <img src="./img/backgr.avif" alt="bg" class="background-image">
+            <img src="./img/backgr.avif" class="background-image">
             <div class="intro-content-area">
                 <h1>Подорожі світом</h1>
                 <h3>Незабутні екскурсійні тури закордоном </h3>
@@ -33,11 +33,12 @@
                 <form class="login-form">
                     <h2>Авторизація</h2>
                     <div class="input-group">
-                        <input type="text" name="loginUser" id="loginUser" required>
+                        <input type="text" name="loginUser" id="loginUser" pattern="[a-zA-Z0-9]{1,15}" required>
                         <label for="loginUser">Ім'я користувача</label>
                     </div>
                     <div class="input-group">
-                        <input type="password" name="loginPassword" id="loginPassword" required>
+                        <input type="password" name="loginPassword" id="loginPassword"
+                            pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{8,20}" required>
                         <label for="loginPassword">Пароль</label>
                     </div>
                     <button type="submit" class="login-btn">Увійти</button>
@@ -56,12 +57,14 @@
                                 <h4>Інформація акаунта</h4>
                             </legend>
                             <div class="account-details">
-                                <label>Пошта*</label><input type="text" name="name" placeholder="example@gmail.com"
+                                <label>Пошта*</label><input type="email" name="email" placeholder="example@gmail.com"
                                     required>
-                                <label>Пароль*</label><input type="password" name="name" required>
-                                <label>Повторіть пошту*</label><input type="text" name="name"
+                                <label>Пароль*</label><input type="password" name="password"
+                                    pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{8,20}" required>
+                                <label>Повторіть пошту*</label><input type="email" name="email"
                                     placeholder="example@gmail.com" required>
-                                <label>Повторіть пароль*</label><input type="password" name="name" required>
+                                <label>Повторіть пароль*</label><input type="password" name="name"
+                                    pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{8,20}" required>
                             </div>
                         </fieldset>
                         <fieldset class="right-column">
@@ -70,13 +73,14 @@
                             </legend>
                             <div class="personal-details">
                                 <div>
-                                    <label>Ім'я та прізвище*</label><input type="text" name="name"
-                                        placeholder="Владислав Барбар" required>
-                                    <label>Телефон*</label><input type="text" name="name" placeholder="055 5555 555"
-                                        required>
-                                    <label>Вулиця</label><input type="text" name="name"
+                                    <label>Ім'я та прізвище*</label><input type="text" name="namesurname"
+                                        placeholder="Владислав Барбар" pattern="[а-яА-Яa-zA-Z]{1,30}" required>
+                                    <label>Телефон*</label><input type="tel" name="phone" placeholder="123-456-7890"
+                                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                                    <label>Вулиця</label><input type="text" name="street"
                                         placeholder="проспект Перемоги, 37">
-                                    <label>Місто*</label><input type="text" name="name" placeholder="Київ" required>
+                                    <label>Місто*</label><input type="text" name="city" placeholder="Київ"
+                                        pattern="[a-zA-Z]{1,15}" required>
                                 </div>
                                 <div>
                                     <label>Країна*</label>
@@ -152,7 +156,7 @@
                                             <option value="November">Листопад</option>
                                             <option value="December">Грудень</option>
                                         </select>
-                                        <input type="text" name="name" required placeholder="2022">
+                                        <input type="text" name="year" required placeholder="2022">
                                     </div>
                                 </div>
 
@@ -167,8 +171,8 @@
                             від вашого сайту</span>
                     </fieldset>
                     <div class="reg-buttons">
-                    <button type="submit" class="reg-btn reg-btn-sbmt" href="#">Відправити</button>
-                    <button type="reset" class="reg-btn reg-btn-canc" href="#">Відміна</button>
+                        <button type="submit" class="reg-btn reg-btn-sbmt" href="#">Відправити</button>
+                        <button type="reset" class="reg-btn reg-btn-canc" href="#">Відміна</button>
                     </div>
                 </form>
             </div>
@@ -213,7 +217,7 @@
                     <img class="asia" src="./img/asia.jpg" alt="asia">
                 </div>
             </div>
-            <div class="slide">
+            <div class="collage">
                 <img class="travel-photo ph1" src="./img/ph1.jpg" alt="beautiful place">
                 <img class="travel-photo ph2" src="./img/ph2.jpg" alt="beautiful place">
                 <img class="travel-photo ph3" src="./img/ph3.jpg" alt="beautiful place">
@@ -268,30 +272,42 @@
                 </div>
                 <div class="contact">
                     <h3>Лист</h3>
-                    <form class="contact-form"">
-                        <p>
+                    <form class="contact-form">
+                        <div class=" contact-inner-box">
                             <label>Ім'я</label>
-                            <input type=" text" name="name" id="name" required>
-                        </p>
-                        <p>
+                            <input type="text" name="name" pattern="[а-яА-Яa-zA-Z]{1,15}" required>
+                        </div>
+                        <div class="contact-inner-box">
                             <label>Прізвище</label>
-                            <input type="text" name="surname" id="surname" required>
-                        </p>
-                        <p>
+                            <input type="text" name="surname" pattern="[а-яА-Яa-zA-Z]{1,15}" required>
+                        </div>
+                        <div class="contact-inner-box">
                             <label>Пошта</label>
-                            <input type="email" name="email" id="email" required>
-                        </p>
-                        <p>
+                            <input type="email" name="email" required>
+                        </div>
+                        <div class="contact-inner-box">
                             <label>Телефон</label>
-                            <input type="text" name="phone" id="phone">
-                        </p>
-                        <p class="contact-bottom">
+                            <input type="text" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                        </div>
+                        <div class="contact-inner-box contact-bottom">
+                            <label>Оберіть тему повідомлення</label>
+                            <select>
+                                <option value=""></option>
+                                <option value="Сonsultantм">Допомога консультанта</option>
+                                <option value="Planning">Планування поїздки</option>
+                                <option value="Group">Групова поїздка</option>
+                                <option value="Payment">Оплата</option>
+                                <option value="Change">Перенесення/відміна подорожі</option>
+                                <option value="Other">Інше</option>
+                            </select>
+                        </div>
+                        <div class="contact-bottom">
                             <label>Повідомлення</label>
                             <textarea name="message" rows="5" id="message"></textarea>
-                        </p>
-                        <p class="contact-bottom">
+                        </div>
+                        <div class="contact-bottom">
                             <button type="submit" class="contact-btn">Відправити</button>
-                        </p>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -308,5 +324,4 @@
         </ul>
     </footer>
 </body>
-
 </html>
