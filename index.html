@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.js"></script>
+    <script src="./script.js"></script>
+    <title>World Travel</title>
+</head>
+
+<body>
+    <header>
+        <h2><a href="index.html">World Travel</a></h2>
+        <nav>
+            <li><a href="#options">Тури</a></li>
+            <li><a href="#packages">Додаткові пакети</a></li>
+            <li><a href="#feedback">Зворотній зв'язок</a></li>
+            <li><a href="#registration">Реєстрація</a></li>
+        </nav>
+    </header>
+    <main>
+        <section class="intro">
+            <img src="./img/backgr.avif" alt="bg" class="background-image">
+            <div class="intro-content-area">
+                <h1>Подорожі світом</h1>
+                <h3>Незабутні екскурсійні тури закордоном </h3>
+            </div>
+            <div class="login-wrapper">
+                <form class="login-form">
+                    <h2>Авторизація</h2>
+                    <div class="input-group">
+                        <input type="text" name="loginUser" id="loginUser" required>
+                        <label for="loginUser">Ім'я користувача</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" name="loginPassword" id="loginPassword" required>
+                        <label for="loginPassword">Пароль</label>
+                    </div>
+                    <button type="submit" class="login-btn">Увійти</button>
+                    <a href="#" class="forgot-pw">Забули пароль?</a>
+                </form>
+            </div>
+        </section>
+
+        <section class="registration" id="registration">
+            <h3>Створити акаунт</h3>
+            <div class="reg-wrapper">
+                <form class="reg" action="#">
+                    <div class="type-information">
+                        <fieldset class="left-column">
+                            <legend>
+                                <h4>Інформація акаунта</h4>
+                            </legend>
+                            <div class="account-details">
+                                <label>Пошта*</label><input type="text" name="name" placeholder="example@gmail.com"
+                                    required>
+                                <label>Пароль*</label><input type="password" name="name" required>
+                                <label>Повторіть пошту*</label><input type="text" name="name"
+                                    placeholder="example@gmail.com" required>
+                                <label>Повторіть пароль*</label><input type="password" name="name" required>
+                            </div>
+                        </fieldset>
+                        <fieldset class="right-column">
+                            <legend>
+                                <h4>Персональна інформація</h4>
+                            </legend>
+                            <div class="personal-details">
+                                <div>
+                                    <label>Ім'я та прізвище*</label><input type="text" name="name"
+                                        placeholder="Владислав Барбар" required>
+                                    <label>Телефон*</label><input type="text" name="name" placeholder="055 5555 555"
+                                        required>
+                                    <label>Вулиця</label><input type="text" name="name"
+                                        placeholder="проспект Перемоги, 37">
+                                    <label>Місто*</label><input type="text" name="name" placeholder="Київ" required>
+                                </div>
+                                <div>
+                                    <label>Країна*</label>
+                                    <select class="country">
+                                        <option value=""></option>
+                                        <option value="Spain">Іспанія</option>
+                                        <option value="Poland">Польша</option>
+                                        <option value="Germany">Німеччина</option>
+                                        <option value="France">Франція</option>
+                                        <option value="USA">США</option>
+                                        <option value="UK">Великобританія</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="sex">Стать*</label>
+                                    <div class="gender">
+                                        <input type="radio" value="none" id="male" name="gender" required />
+                                        <label for="male" class="radio">Чоловік</label>
+                                        <input type="radio" value="none" id="female" name="gender" required />
+                                        <label for="female" class="radio">Жінка</label>
+
+                                    </div>
+                                </div>
+                                <div class="birthdate">
+                                    <label>Дата народження*</label>
+                                    <div class="bdate-block">
+                                        <select class="day" required>
+                                            <option value=""></option>
+                                            <option value="01">01</option>
+                                            <option value="02">02</option>
+                                            <option value="03">03</option>
+                                            <option value="04">04</option>
+                                            <option value="05">05</option>
+                                            <option value="06">06</option>
+                                            <option value="07">07</option>
+                                            <option value="08">08</option>
+                                            <option value="09">09</option>
+                                            <option value="10">10</option>
+                                            <option value="11">11</option>
+                                            <option value="12">12</option>
+                                            <option value="13">13</option>
+                                            <option value="14">14</option>
+                                            <option value="15">15</option>
+                                            <option value="16">16</option>
+                                            <option value="17">17</option>
+                                            <option value="18">18</option>
+                                            <option value="19">19</option>
+                                            <option value="20">20</option>
+                                            <option value="21">21</option>
+                                            <option value="22">22</option>
+                                            <option value="23">23</option>
+                                            <option value="24">24</option>
+                                            <option value="25">25</option>
+                                            <option value="26">26</option>
+                                            <option value="27">27</option>
+                                            <option value="28">28</option>
+                                            <option value="29">29</option>
+                                            <option value="30">30</option>
+                                            <option value="31">31</option>
+                                        </select>
+                                        <select class="mounth" required>
+                                            <option value=""></option>
+                                            <option value="January">January</option>
+                                            <option value="February">February</option>
+                                            <option value="March">March</option>
+                                            <option value="April">April</option>
+                                            <option value="May">May</option>
+                                            <option value="June">June</option>
+                                            <option value="July">July</option>
+                                            <option value="August">August</option>
+                                            <option value="September">September</option>
+                                            <option value="October">October</option>
+                                            <option value="November">November</option>
+                                            <option value="December">December</option>
+                                        </select>
+                                        <input type="text" name="name" required placeholder="2022">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </fieldset>
+                    </div>
+                    <fieldset>
+                        <legend>
+                            <h4>Розсилка</h4>
+                        </legend>
+                        <input type="checkbox" name="checkbox"><span>Я хочу отримувати персональні пропозиції
+                            від вашого сайту</span>
+                    </fieldset>
+                    <button type="submit" class="reg-btn" href="#">Відправити</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="options" id="options">
+            <h3 class="options-title">Варіанти подорожей</h3>
+            <p>Агенція «World Travel» пропонує 3 різноманітні туристичні подорожі з різними напрямками та тривалістю
+                маршруту. Усі пакети були ретельно сплановані нашими спеціалістами. Таким чином вам і
+                вашій родині не доведеться ні про що для відпустки. Все буде налагоджено нами, а вам
+                залишається лише пакувати валізи та сідати в літак.</p>
+            <hr>
+
+            <div class="options-inner">
+                <div class="box-img">
+                    <img class="thailand" src="./img/thailand.jpg" alt="thailand">
+                    <h2>Таїланд</h2>
+                    <p>
+                        Два тижні - це короткий час, щоб вивчити Таїланд повною мірою. Однак цей маршрут розроблено
+                        таким
+                        чином,
+                        щоб ви могли добре осягнути всю країну, зберігаючи логістику максимально легкою.
+                    </p>
+                </div>
+                <div class="box-img">
+                    <img class="australia" src="./img/australia.jpg" alt="australia">
+                    <h2>Австралія</h2>
+                    <p>
+                        Австралія — величезна країна, майже така ж велика, як США, тому цей маршрут включає відвідування
+                        двох найкращих міст Австралії: Сіднея та Мельбурна, Великого Бар’єрного рифу, глибинки та
+                        Великої
+                        океанської дороги.
+                    </p>
+                </div>
+                <div class="box-img box-asia">
+                    <h2>Азія</h2>
+                    <p>
+                        Цей турпакет включає відвідування 4 країн Південної Азії: В’єтнаму, Камбоджі, Філіппін і
+                        Таїланду,
+                        кожна з яких займає приблизно тиждень. Будьте готові пізнати красу Азії.
+                    </p>
+                    <img class="asia" src="./img/asia.jpg" alt="asia">
+                </div>
+            </div>
+        </section>
+
+        <section class="packages" id="packages">
+            <h3 class="options-title">Додаткові пакети</h3>
+            <p>Ми пропонуємо різноманітні додаткові послуги на місці. Незалежно від того, бачили ви вже більшу частину
+                світу, чи вперше закордоном, з нами у вас буде ідеальна відпустка.</p>
+            <hr>
+            <ul class="options-inner">
+                <li>
+                    <i class="fa fa-compass fa-4x"></i>
+                    <h4>Подорож з гідом</h4>
+                    <p>Шукаєте повністю досвідченого гіда? Обирайте екскурсію з одним із наших професіоналів. Вони
+                        покажуть
+                        вам таємниці, які ви, ймовірно, самі пропустите.</p>
+                </li>
+                <li>
+                    <i class="fa fa-camera-retro fa-4x"></i>
+                    <h4>Фотоподорож</h4>
+                    <p>Хочете відчути красу природи без спеки й втоми у дорозі?
+                        Візьміть фототур на одному з наших комфортабельних автобусів. </p>
+                </li>
+                <li>
+                    <i class="fa fa-bicycle fa-4x"></i>
+                    <h4>Подорож на велосипеді</h4>
+                    <p>Якщо велосипед для вас більш швидкий й зручний, подумайте про екскурсію однією з наших
+                        велосипедних
+                        доріжок, створених саме під місцевість. Ми надаємо велосипеди, а також обід!</p>
+                </li>
+                <li>
+                    <i class="fa fa-flag-checkered fa-4x"></i>
+                    <h4>Гірські перегони</h4>
+                    <p>Ви знайомі з горами й маєте змігальний дух? Запишіться на один із наших гірських марафонів!
+                        Спробуйте
+                        досягти вершини першим.</p>
+                </li>
+            </ul>
+        </section>
+        <section class="feedback" id="feedback">
+            <h3>Звортній зв'язок</h3>
+            <div class="contact-wrapper">
+                <div class="form-info">
+                    <h3>World Travel</h3>
+                    <ul>
+                        <li><i class="fa fa-road"></i> Київ, проспект Перемоги, 37</li>
+                        <li><i class="fa fa-phone"></i> +38 (000) 000-000</li>
+                        <li><i class="fa fa-envelope"></i> email@gmail</li>
+                    </ul>
+                </div>
+                <div class="contact">
+                    <h3>Лист</h3>
+                    <form class="contact-form"">
+                        <p>
+                            <label>Ім'я</label>
+                            <input type=" text" name="name" id="name" required>
+                        </p>
+                        <p>
+                            <label>Прізвище</label>
+                            <input type="text" name="surname" id="surname" required>
+                        </p>
+                        <p>
+                            <label>Пошта</label>
+                            <input type="email" name="email" id="email" required>
+                        </p>
+                        <p>
+                            <label>Телефон</label>
+                            <input type="text" name="phone" id="phone">
+                        </p>
+                        <p class="contact-bottom">
+                            <label>Повідомлення</label>
+                            <textarea name="message" rows="5" id="message"></textarea>
+                        </p>
+                        <p class="contact-bottom">
+                            <button type="submit" class="contact-btn">Відправити</button>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© Created by Vladyslav Barbar</p>
+        <p>World Travel</p>
+        <ul>
+            <li><a href="#"><i class="fab fa-twitter-square fa-2x"></i></a></li>
+            <li><a href="#"><i class="fab fa-facebook-square fa-2x"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram-square fa-2x"></i></a></li>
+
+        </ul>
+    </footer>
+</body>
+
+</html>
