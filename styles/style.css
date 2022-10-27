@@ -242,6 +242,7 @@ hr {
     border-radius: 4px;
     width: 800px;
 }
+
 .reg-wrapper h4 {
     font-size: 20px;
 }
@@ -251,45 +252,48 @@ hr {
     margin: 15px 0;
 }
 
-.type-information{
+.type-information {
     display: flex;
     justify-content: space-around;
 }
 
-.left-column{
+.left-column {
     flex-basis: 45%;
 }
 
-.right-column{
+.right-column {
     flex-basis: 55%;
 }
 
 .account-details,
-.personal-details>div{
-display: flex;
-flex-wrap: wrap;
-justify-content: flex-start;
+.personal-details>div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
-.gender{
+.gender {
     display: flex;
     align-items: baseline;
     width: 250px;
 }
 
-.day, .mounth, .country{
+.day,
+.mounth,
+.country {
     font-size: 14px;
     padding: 10px;
     border: solid 1px #627EDC;
     border-radius: 4px;
 }
+
 .reg label {
     padding-top: 15px;
-    width: 100%;   
-    font-size: 18px; 
+    width: 100%;
+    font-size: 18px;
 }
 
-.reg input{
+.reg input {
     font-size: 14px;
     padding: 10px;
     margin-top: 5px;
@@ -297,29 +301,33 @@ justify-content: flex-start;
     border: solid 1px #627EDC;
 }
 
-input[type='checkbox'], [type='radio']{
+input[type='checkbox'],
+[type='radio'] {
     margin-right: 10px;
 }
 
-legend{
+legend {
     font-size: 18px;
     margin-bottom: 10px;
     color: rgb(3, 102, 102);
-    
+
 }
-.reg span{
+
+.reg span {
     font-size: 18px;
 }
 
+.reg-buttons {
+    display: flex;
+    justify-content: space-around;
+}
 
-.reg-btn{
+.reg-btn {
     display: block;
-    margin: 0 auto;
-    width: 50%;
+    width: 25%;
     padding: 16px;
     border: solid 1px #627EDC;
     border-radius: 4px;
-    background: rgb(3, 102, 102);
     border: 0;
     color: #fff;
     text-transform: uppercase;
@@ -327,14 +335,23 @@ legend{
     font-weight: bold;
 }
 
+.reg-btn-sbmt {
+    background: rgb(3, 102, 102);
+}
 
-.reg-btn:hover {
+.reg-btn-sbmt:hover {
     background: rgb(6, 168, 168);
     transition: background-color 2s ease-out;
 }
 
+.reg-btn-canc {
+    background: rgb(160, 137, 7);
+}
 
-
+.reg-btn-canc:hover {
+    background: rgb(241, 207, 11);
+    transition: background-color 2s ease-out;
+}
 
 
 /*Options Section*/
@@ -385,6 +402,46 @@ legend{
 .box-asia {
     margin-top: 100px;
 }
+
+.travel-photo {
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    border-radius: 10px;
+
+}
+
+.travel-photo:hover {
+    z-index: 4;
+    box-shadow: 0 0 10px #ccc;
+}
+
+.slide {
+    margin-top: 100px;
+    position: relative;
+    width: 1200px;
+    height: 700px;
+
+}
+
+.ph1 {
+    z-index: 1;
+    top:50px;
+    left: 0;
+}
+
+.ph2 {
+    left: 280px;
+    top: 150px;
+    z-index: 2;
+}
+
+.ph3 {
+    left: 600px;
+    top: 250px;
+    z-index: 3;
+}
+
 
 /*Packages Section*/
 
