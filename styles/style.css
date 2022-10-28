@@ -553,6 +553,24 @@ legend {
     transition: background-color 2s ease-out;
 }
 
+/*Top button*/
+
+.topbutton {
+    width: 100px;
+    border: 2px solid rgb(71, 61, 61);
+    background: rgb(88, 88, 88);
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
 /*footer*/
 
 footer {
